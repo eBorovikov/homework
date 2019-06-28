@@ -37,5 +37,5 @@ getDivisors(12); // [1, 2, 3, 4, 6, 12]
 getDivisors('Content'); // Error: parameter type is not a Number
 getDivisors(0); // Error: parameter can't be a 0
 
-//export { getDivisors };
+export { getDivisors };
 /* не удалять */

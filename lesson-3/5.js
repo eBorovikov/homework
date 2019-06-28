@@ -38,5 +38,5 @@ isPositive(-3); // false
 isPositive(3); // true
 isPositive('s'); // Error: parameter type is not a Number
 
-//export { isPositive };
+export { isPositive };
 /* не удалять */

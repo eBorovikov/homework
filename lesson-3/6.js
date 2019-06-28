@@ -29,5 +29,5 @@ isEven(3); // false
 isEven(4); // true
 isEven('Content'); // Error: parameter type is not a Number
 
-//export { isEven };
+export { isEven };
 /* не удалять */

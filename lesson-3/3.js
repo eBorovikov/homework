@@ -22,5 +22,5 @@ console.log(f('s', 9, 3));
 f(9, 3, 2); // 3
 f('s', 9, 3); // Error: all parameters type should be a Number
 
-//export { f };
+export { f };
 /* не удалять */

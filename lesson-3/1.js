@@ -26,5 +26,5 @@ console.log(f('Content'));
 f(2); // 8
 f('Content'); // Error: parameter is not a number type
 
-//export { f };
+export { f };
 /* не удалять */

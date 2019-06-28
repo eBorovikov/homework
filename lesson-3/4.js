@@ -33,5 +33,5 @@ f(2); // Понедельник
 f(8); // Error: parameter should be in the range of 1 to 7
 f('1'); // Error: parameter type is not a Number
 
-//export { f };
+export { f };
 /* не удалять */
