@@ -18,14 +18,16 @@
 
 function shallowMerge(obj1, obj2){
     const result = {}
-    for(key in obj1){
+    const arr = Object.getOwnPropertyNames(obj1);
+    arr.forEach(function(key){
         
         Object.defineProperty(result, key, Object.getOwnPropertyDescriptor(obj1, key))
-    }
-    for(key in obj2){
+    });
+    const arr2 = Object.getOwnPropertyNames(obj2);
+    arr2.forEach(function(key){
         
         Object.defineProperty(result, key, Object.getOwnPropertyDescriptor(obj2, key))
-    }
+    });
     return result;
 }
 
@@ -34,6 +36,7 @@ const userData = { job: 'developer', country: 'Germany', lastName: 'Schmidt' };
 
 Object.defineProperty(user, 'firstName', { writable: false });
 Object.defineProperty(userData, 'job', { configurable: false });
+//Object.defineProperty(userData, 'country', { enumerable: false });чтобы проверить условие Из объектов и обеих аргументах копируются свойства недоступные для перечисления.
 
 const result = shallowMerge(user, userData);
 
