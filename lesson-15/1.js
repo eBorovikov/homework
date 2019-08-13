@@ -33,7 +33,7 @@ function sayHello() {
     console.log('Hello!');
 }
 sayHello.delay(1000)(); /* Выведет "Hello!" через 1 секунду */
-
+//я подправил строку выше. до этого она была sayHello.delay(1000); не уверен, что так она должна работать.
 
 function sum(a, b) {
     console.log(a + b);
