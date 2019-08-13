@@ -19,14 +19,16 @@
  * - Решить задачу в стиле прототипного наследования JavaScript.
  */
 
+//Решение:
 function Developer() {
     this.completedTasks = [];
     this.completeTask = function(task) {
         this.completedTasks.push(task);
     };
 }
+//----------------------------------------
 
-/*
+/*Как было раньше
 function Developer() {}
 Developer.prototype.completedTasks = [];
 Developer.prototype.completeTask = function(task) {
