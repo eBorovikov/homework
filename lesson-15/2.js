@@ -19,14 +19,6 @@
  * - Решить задачу в стиле прототипного наследования JavaScript.
  */
 
-//Решение:
-function Developer() {
-    this.completedTasks = [];
-    this.completeTask = function(task) {
-        this.completedTasks.push(task);
-    };
-}
-//----------------------------------------
 
 /*Как было раньше
 function Developer() {}
@@ -35,6 +27,13 @@ Developer.prototype.completeTask = function(task) {
     this.completedTasks.push(task);
 };
 */
+//Решение
+function Developer() {
+    this.completedTasks = [];
+}
+Developer.prototype.completeTask = function(task) {
+    this.completedTasks.push(task);
+};
 
 const developer1 = new Developer();
 const developer2 = new Developer();
@@ -47,6 +46,3 @@ console.log(developer1.completedTasks.length); // 3
 console.log(developer2.completedTasks.length); // 3
 
 exports.Developer = Developer;
-
-
-console.log(Developer.prototype)
