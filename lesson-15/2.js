@@ -27,6 +27,7 @@ function Developer() {
 }
 
 /*
+function Developer() {}
 Developer.prototype.completedTasks = [];
 Developer.prototype.completeTask = function(task) {
     this.completedTasks.push(task);
