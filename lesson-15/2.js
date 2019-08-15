@@ -16,7 +16,7 @@
  * Нужно, чтобы у каждого разработчика был свой независимый массив completedTasks.
  * 
  *  Условия:
- * - Решить задачу в стиле прототипного наследования JavaScript.
+ * - 
  */
 
 
@@ -27,13 +27,26 @@ Developer.prototype.completeTask = function(task) {
     this.completedTasks.push(task);
 };
 */
-//Решение
+
+//Я не понял, чо имелось в виду под "Решить задачу в стиле прототипного наследования JavaScript". Поэтому написал 2 решения. Вибирай какое
+//Решение 1 (самое логичное)
 function Developer() {
     this.completedTasks = [];
 }
 Developer.prototype.completeTask = function(task) {
     this.completedTasks.push(task);
 };
+/*
+*Решение 2 (тут используется прототип)
+function Developer() {}
+Developer.prototype.completeTask = function(task) {
+    if(this.completedTasks){
+        this.completedTasks.push(task);
+    }else{
+        this.completedTasks = [task];
+    }
+};
+*/
 
 const developer1 = new Developer();
 const developer2 = new Developer();
